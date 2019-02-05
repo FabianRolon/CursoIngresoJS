@@ -1,1 +1,0 @@
-crear archivo txt en una carpeta en linux : echo "hola">>git.txt

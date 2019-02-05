@@ -1,0 +1,9 @@
+crear archivo txt en una carpeta en linux : echo "hola">>git.txt
+
+1) git clone repo //clona los repositorios
+
+2) git add . //agrega archivo
+
+3) git commit //este guarda una foto
+
+4) git push // sube todo a la nube
