@@ -9,9 +9,9 @@ function mostrar()
 
 	nombre = prompt("Por favor ingrese su nombre");
 
-	//elNombre.value = nombre;
+	elNombre.value = nombre;
 
-	document.getElementById('elNombre').value = nombre; //otra forma de escribir la linea anterior, esta es compatible con cualquier explorador
+	//document.getElementById('elNombre').value = nombre; //otra forma de escribir la linea anterior, esta es compatible con cualquier explorador
 	
 
 }

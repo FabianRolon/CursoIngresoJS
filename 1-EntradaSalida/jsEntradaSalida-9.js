@@ -15,6 +15,6 @@ function mostrarAumento()
 
     aumento = sueldoingresado*1.1;
 
-    aumento = prompt("Resultado"); //arreglar esto
+    resultado.value = aumento;
 	
 }
