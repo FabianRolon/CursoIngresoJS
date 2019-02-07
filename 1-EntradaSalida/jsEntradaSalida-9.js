@@ -5,5 +5,16 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
+	var sueldoingresado;
+	var aumento;
+
+    sueldoingresado = sueldo.value;
+    
+    sueldoingresado = parseInt(sueldoingresado);
+   
+
+    aumento = sueldoingresado*1.1;
+
+    aumento = prompt("Resultado"); //arreglar esto
 	
 }
