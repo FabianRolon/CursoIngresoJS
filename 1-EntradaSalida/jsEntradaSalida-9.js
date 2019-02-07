@@ -15,6 +15,7 @@ function mostrarAumento()
 
     aumento = sueldoingresado*1.1;
 
-    resultado.value = aumento;
+    resultado.value = aumento; // al resultado, que es id del cuadro de texto se le asigna el valor de aumento
+    
 	
 }
