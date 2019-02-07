@@ -47,9 +47,6 @@ function multiplicar()
 	primernumero = numeroUno.value;
 	segundonumero = numeroDos.value;
 
-	primernumero = parseInt(primernumero);
-	segundonumero = parseInt(segundonumero);
-
 	multiplicacion = primernumero * segundonumero;
 
 	alert("La multiplicacion es "+multiplicacion);
@@ -65,9 +62,7 @@ function dividir()
 	primernumero = numeroUno.value;
 	segundonumero = numeroDos.value;
 
-	primernumero = parseInt(primernumero);
-	segundonumero = parseInt(segundonumero);
-
+	
 	division = primernumero / segundonumero;
 
 	alert("La division es "+division);
