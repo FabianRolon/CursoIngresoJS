@@ -1,16 +1,16 @@
 function mostrar()
 {
-//tomo la edad  
-var laedad;
+	//tomo la edad  
+	var laEdad;
 
-laedad = edad.value;
-//laedad = parseInt(laedad);
+	laEdad = edad.value;
+	laEdad = parseInt(laEdad); //se parsea para comparar valores numericos
 
-if (laedad == 15) {
-		
+	if (laEdad == 15) //si quisiera comparar palabras se usan comillas ""
+	{		
 		alert("Niña bonita");
 	}	
-	
+
 
 
 
