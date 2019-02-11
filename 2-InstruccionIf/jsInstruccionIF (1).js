@@ -10,10 +10,8 @@ if (laedad == 15) {
 		
 		alert("Niña bonita");
 	}	
-
-else	alert("Nada");
 	
-	}	
+
 
 
 }//FIN DE LA FUNCIÓN
