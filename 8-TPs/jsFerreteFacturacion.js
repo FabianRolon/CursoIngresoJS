@@ -10,7 +10,7 @@ function Sumar ()
 	var tercerprecio;
 	var sumatotal;
 
-	primerprecio = document.getElementById('PrecioUno').value;
+	primerprecio = PrecioUno.value;
 	segundoprecio = document.getElementById('PrecioDos').value;
 	tercerprecio = document.getElementById('PrecioTres').value;
 
@@ -24,9 +24,45 @@ function Sumar ()
 }
 function Promedio () 
 {
-	
+	var primerprecio;
+	var segundoprecio;
+	var tercerprecio;
+	var sumatotal;
+	var promedio;
+
+	primerprecio = document.getElementById('PrecioUno').value;
+	segundoprecio = document.getElementById('PrecioDos').value;
+	tercerprecio = document.getElementById('PrecioTres').value;
+
+	primerprecio = parseInt(primerprecio);
+	segundoprecio = parseInt(segundoprecio);
+	tercerprecio = parseInt(tercerprecio);
+
+	sumatotal = primerprecio + segundoprecio + tercerprecio;
+
+	promedio = sumatotal/3;
+
+	alert("El promedio es: "+promedio);
 }
 function PrecioFinal () 
 {
-	
+	var primerprecio;
+	var segundoprecio;
+	var tercerprecio;
+	var sumatotal;
+	var preciototal;
+
+	primerprecio = document.getElementById('PrecioUno').value;
+	segundoprecio = document.getElementById('PrecioDos').value;
+	tercerprecio = document.getElementById('PrecioTres').value;
+
+	primerprecio = parseInt(primerprecio);
+	segundoprecio = parseInt(segundoprecio);
+	tercerprecio = parseInt(tercerprecio);
+
+	sumatotal = primerprecio + segundoprecio + tercerprecio;
+
+	preciototal = sumatotal * (1 + 21/100);
+
+	alert("El precio final es: "+preciototal);
 }
