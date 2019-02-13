@@ -1,20 +1,27 @@
+/*alert("Ustedes son xxxx y xxxx, 
+sus edades son xx y xx,
+ y la suma de sus edades es xx")
+
+*/
 
 function mostrar()
+
 {
-	var largo;
-	var ancho;
-	var perimetro;
+	var nombreUno;
+	var nombreDos;
+	var edadUno;
+	var edadDos;
+	var sumaEdades;
 
-	largo = prompt("Ingrese el largo");
+	nombreUno = prompt("Ingrese el primer nombre");
+	edadUno = prompt("Ingrese la edad");
+	nombreDos = prompt("Ingrese el segundo nombre");
+	edadDos = prompt("Ingrese la edad");
+	
+	edadUno = parseInt(edadUno);
+	edadDos = parseInt(edadDos);
+	sumaEdades = edadUno + edadDos;
 
-	ancho = prompt("Ingrese el ancho");
-
-	largo = parseInt(largo);
-	ancho = parseInt(ancho);
-
-	perimetro = largo + ancho;
-
-	alert("El perimetro es: "+perimetro);
-
+	alert("Ustedes son "+nombreUno+" y "+nombreDos+" , sus edades son "+edadUno+" y "+edadDos+", y la suma de sus edades es "+sumaEdades);
 }
 
