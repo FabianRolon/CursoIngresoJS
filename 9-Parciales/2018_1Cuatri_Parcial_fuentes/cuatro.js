@@ -8,6 +8,7 @@ function mostrar()
 	var precioTotalCompra;
 	var recargo;
 	var metodoDePago;
+	var precioFinal;
 
 	cantidadCompra = prompt("Cuantos productos compra?");
 	precioTotalCompra = prompt("Cual es el valor total de la compra?")
@@ -19,11 +20,11 @@ function mostrar()
 
 	if(cantidadCompra > 2)	
 	{
-		precioTotalCompra = precioTotalCompra * (1 - 1/10);
+		precioFinal = precioTotalCompra * (1 - 1/10);
 		
 		if(precioTotalCompra > 2000)
 		{
-			precioTotalCompra = precioTotalCompra * (1 - 15/100);
+			precioFinal = (precioTotalCompra * (1 - 25/100));
 		}
 		
 	}
@@ -31,10 +32,10 @@ function mostrar()
 	
 	if(metodoDePago == 0)
 	{
-			precioTotalCompra = precioTotalCompra * (1 + 1/10);
+			precioFinal = precioFinal * (1 + 1/10);
 	}
 
-	alert("El precio final de su compra es: "+precioTotalCompra);
+	alert("El precio final de su compra es: "+precioFinal);
 
 
 	
