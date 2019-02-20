@@ -15,66 +15,71 @@ function CalcularPrecio ()
  	var precioFinal;
  	var precioLamparita = 35;
  	var ingresosBrutos;
+ 	var descuento = 1;
 
  	cantidad = Cantidad.value;
  	marca = Marca.value;
 
  	cantidad = parseInt(cantidad);
+ 	precioFinal = cantidad*precioLamparita;
+ 	
 
- 	if(cantidad < 3)
+ 	if(cantidad >= 6)
  	{
- 		precioFinal = cantidad*precioLamparita;
+ 		descuento = 0.5;
  	}
-
- 	if(cantidad > 5)
+ 	else
  	{
- 		precioFinal = cantidad*precioLamparita/2;
- 	}
+ 		if(cantidad == 5)
+ 		{
+ 			if(marca == "ArgentinaLuz")
+ 			{			
+ 				descuento = 0.6;
 
- 	if(cantidad == 5)
- 	{
- 		if(marca == "ArgentinaLuz")
+ 			}else
+ 			{
+ 				descuento = 0.7;
+ 			}
+ 		}
+ 		
+ 		if(cantidad == 4)
  		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.6;
- 		}else
+ 			if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+ 			{
+ 			
+ 				descuento = 0.75;
+
+ 			}else
+ 			{
+ 				descuento = 0.8;
+ 			}
+ 		}
+ 		
+ 		if(cantidad == 3)
  		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.7;
+
+
+
+ 			if(marca == "ArgentinaLuz")
+ 			{
+ 				descuento = 0.85;
+ 			}
+ 			else
+ 			{
+ 				if(marca == "FelipeLamparas")
+ 				{
+ 					descuento = 0.9;
+ 				}
+ 				else
+ 				{
+ 					descuento = 0.95;
+ 				}
+ 			}
+
  		}
  	}
-
- 	if(cantidad == 4)
- 	{
- 		if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
- 		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.75;
- 		}else
- 		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.8;
- 		}
- 	}
-
- 	if(cantidad == 3)
- 	{
- 		if(marca == "ArgentinaLuz")
- 		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.85;
- 		}
- 		if(marca == "FelipeLamparas")
- 		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.9;
- 		}
- 		if(marca != "ArgentinaLuz" && marca != "FelipeLamparas")
- 		{
- 			precioFinal = cantidad*precioLamparita;
- 			precioFinal = precioFinal*0.95;
- 		}
- 	}
+	
+	precioFinal = precioFinal*descuento;
 
  	if(precioFinal > 120)
  	{
