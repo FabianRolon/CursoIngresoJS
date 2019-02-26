@@ -25,7 +25,7 @@ function mostrar()
 
 		sexo = prompt("Ingrese el sexo, 'f' ó 'm'");
 
-		while(sexo != "f" && sexo != "m")
+		while(!(isNaN(nota)) || sexo != "f" && sexo != "m")
 		{
 			sexo = prompt("ERROR! Ingrese 'f' ó 'm'");
 		}
