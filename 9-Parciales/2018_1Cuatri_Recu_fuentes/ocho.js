@@ -1,18 +1,33 @@
 function mostrar()
 {
 	var numero;
-	var letra='s';
+	var validador='si';
 	var contador;
+	var letra;
 	
-	while(letra != 0)
+	while(validador == 'si')
  	{
-		letra = prompt("Ingrese una letra");
+		letra = prompt("Ingrese una letra o '0' para terminar" );
 		
 
-		while(!(isNaN(letra) || letra.length > 1 || letra.length == 0)
+		while(!(isNaN(letra)) || letra.length > 1 || letra.length == 0)
 		{
-			letra = prompt("ERROR! Ingrese una letra");
-		}		
-			
-	}
+			letra= prompt("ERROR! Ingrese una letra");
+		}
+
+		numero = prompt("Ingrese un numero entre -100 y 100");
+		numero = parseInt(numero);
+
+		while(isNaN(numero) || numero > 100 || numero < -100)
+		{
+			numero = prompt("ERROR! Ingrese un numero entre -100 y 100");
+			numero = parseInt(numero);
+		}
+
+		validador = prompt("Desea continuar 'si' o 'no'");
+
+
+
+	}	
+	
 }
