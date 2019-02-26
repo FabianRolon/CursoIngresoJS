@@ -7,7 +7,7 @@ function mostrar()
 	
 	while(validador == 'si')
  	{
-		letra = prompt("Ingrese una letra o '0' para terminar" );
+		letra = prompt("Ingrese una letra" );
 		
 
 		while(!(isNaN(letra)) || letra.length > 1 || letra.length == 0)
