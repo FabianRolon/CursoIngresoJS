@@ -13,8 +13,8 @@ function mostrar()
 	var nombreAnimalMaximo;
 	var nombreAnimalMinimo;
 	var temperaturaMasPesado;
-	var pesoMaximoBajoCero = 1;
-	var pesoMinimoBajoCero = 1000;
+	var pesoMaximoBajoCero=1;
+	var pesoMinimoBajoCero=1000;
 
 	while(validador == 'si')
  	{
@@ -65,6 +65,12 @@ function mostrar()
 		{
 			contadorAnimalbajoCero++;
 			
+			/*if(contador==1)
+			{
+				pesoMaximoBajoCero = peso;
+				pesoMinimoBajoCero = peso;
+			}*/
+			
 			if(peso > pesoMaximoBajoCero)
 			{
 				pesoMaximoBajoCero = peso;
@@ -85,9 +91,15 @@ function mostrar()
 		validador = prompt("Desea continuar 'si' o 'presione cualquier tecla/s' para salir");
 	}	
 
-	alert("La cantidad de temperaturas pares es: "+temperaturasPar);
+	/*alert("La cantidad de temperaturas pares es: "+temperaturasPar);
 	alert("El nombre y temperatura del animal mas pesado es: "+nombreAnimalMaximo+" "+temperaturaMasPesado+"°C");
 	alert("La cantidad de animales que viven bajo cero es: "+contadorAnimalbajoCero);
 	alert("El promedio del peso de todos los animales es: "+promedioPeso);
 	alert("El peso maximo y minimo de los animales que viven bajo cero es: "+pesoMaximoBajoCero+ " y "+pesoMinimoBajoCero);
-}
+*/
+	document.write("La cantidad de temperaturas pares es: "+temperaturasPar+"<br>");
+	document.write("El nombre y temperatura del animal mas pesado es: "+nombreAnimalMaximo+" "+temperaturaMasPesado+"°C <br>" );
+	document.write("La cantidad de animales que viven bajo cero es: "+contadorAnimalbajoCero+"<br>");
+	document.write("El promedio del peso de todos los animales es: "+promedioPeso+"<br>");
+	document.write("El peso maximo y minimo de los animales que viven bajo cero es: "+pesoMaximoBajoCero+ " y "+pesoMinimoBajoCero+"<br>");
+}	

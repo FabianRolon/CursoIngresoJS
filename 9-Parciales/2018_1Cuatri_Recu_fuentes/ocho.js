@@ -14,7 +14,7 @@ function mostrar()
 	var minimo =  100;
 	var letraMaximo;
 	var letraMinimo;
-
+	
 	while(validador == 'si')
  	{
 		contador++;
